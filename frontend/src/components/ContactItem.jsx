@@ -44,12 +44,15 @@ const ContactItem = ({ contact, onDelete }) => {
           </div>
         </div>
         
+
+
         <button
           onClick={handleDelete}
           disabled={isDeleting}
           className="ml-4 p-2 text-red-600 hover:bg-red-50 rounded-lg transition-colors duration-200 disabled:opacity-50"
           title="Delete contact"
         >
+            
           {isDeleting ? (
             <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
               <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
