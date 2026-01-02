@@ -110,8 +110,8 @@ http://localhost:5000/api/contacts
 curl -X POST http://localhost:5000/api/contacts/createContact \
   -H "Content-Type: application/json" \
   -d '{
-    "name": "John Doe",
-    "email": "john@example.com",
+    "name": "shubham",
+    "email": "shubhams7648@gmail.com",
     "phone": "1234567890",
     "message": "Hello!"
   }'
@@ -196,3 +196,4 @@ app.use(cors({
 
 
 ⭐ **If you found this project helpful, please give it a star!** ⭐
+
