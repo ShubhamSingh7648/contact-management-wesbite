@@ -10,7 +10,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",          // local dev
-      "https://contact-management-wesbite-6za816o71.vercel.app/" // Vercel frontend
+      "https://contact-management-wesbite-6za816o71.vercel.app" // Vercel frontend
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
