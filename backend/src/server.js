@@ -6,7 +6,17 @@ const contactRoutes = require("./routes/contact.routes.js");
 
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",          // local dev
+      "https://contact-management-wesbite-6za816o71.vercel.app/" // Vercel frontend
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true
+  })
+);
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.text());
