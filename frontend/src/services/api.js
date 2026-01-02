@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'https://contact-management-wesbite.onrender.com';
+const API_BASE_URL = 'https://contact-management-wesbite.onrender.com/api/contacts';
 
 export const contactAPI = {
   // Create a new contact
